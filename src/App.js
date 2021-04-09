@@ -1,8 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Component } from 'react';
 import {BrowserRouter} from 'react-router-dom';
-import Main from './Components/MainComponent',
+import Main from './Components/MainComponent';
 
 
 class App extends Component{
@@ -15,7 +15,10 @@ class App extends Component{
     //   </header>
     // </div>
     <BrowserRouter>
+    <div className="App"> 
     <Main/>
+    </div>
+   
     </BrowserRouter>
      );
   }

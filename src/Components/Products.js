@@ -4,7 +4,7 @@ export const Plist=[
         id: 0,
         name:'BoyFriend fit Clean Blue Jeans',
         image: '/assets/images/boyFriendFitCleanBlueJeans.jpg',
-        category: 'boyFriendFitCleanBlueJeans',
+        category: 'boyFriendFit',
         description: 'Great fit!!!!!!',
         mobile:9085435789
 },
@@ -12,7 +12,7 @@ export const Plist=[
     id: 1,
     name:'BoyFriend fit Clean Grey Jeans',
     image: '/assets/images/boyFriendFitCleanGreyJeans.jpg',
-    category: 'boyFriendFitCleanGreyJeans',
+    category: 'boyFriendFit',
     description: 'Great fit!!!!!!',
     mobile:9876342190
 },
@@ -20,7 +20,7 @@ export const Plist=[
     id: 2,
         name:'BoyFriend fit Distressed Jeans',
         image: '/assets/images/boyFriendFitDistressedJeans.jpg',
-        category: 'boyFriendFitDistressedJeans',
+        category: 'boyFriendFit',
         description: 'Great fit!!!!!!',
         mobile:7865467895
 },
@@ -28,15 +28,15 @@ export const Plist=[
     id: 3,
         name:'slim Blue Jeans',
         image: '/assets/images/slimBlueJeans.jpg',
-        category: 'slimBlueJeans',
+        category: 'slimFit',
         description: 'Great fit!!!!!!',
         mobile:7865097640
 },
 {
     id: 4,
-        name:'slim Black Jeans',
-        image: '/assets/images/slimGreyJeans.jpg',
-        category: 'slimGreyJeans',
+        name:'slim Grey Jeans',
+        image: '/assets/images/slimGreyJeans.jfif',
+        category: 'slimFit',
         description: 'Great fit!!!!!!',
         mobile:7865097641
 }
