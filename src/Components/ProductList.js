@@ -1,14 +1,20 @@
 import React from 'react';
-import {Card,CardImgOverlay,CardTitle,CardImg,Button} from 'reactstrap';
+import {Card,CardImgOverlay,CardTitle,CardImg,Button, CardBody, CardSubtitle, Dropdown, DropdownToggle, DropdownItem, DropdownMenu} from 'reactstrap';
 import App from '../App.css';
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-
+import Cart from './Cart';
+let arr=[];
 const addToCart=(product)=>{
    
 console.log("add to cart clicked")
-let arr=[];
-arr.push(product.id);
+
+arr.push(product);
 console.log(arr);
+return(
+    <div>
+        {alert("Product"+product.id+" added to cart")}
+    </div>
+);
 }
 
 function Renderproducts({product}){
@@ -19,7 +25,8 @@ function Renderproducts({product}){
                 <Card className="card" >
                     <CardImg width="50%" src={product.image} alt={product.name} />
                     <CardImgOverlay>
-                        <CardTitle>{product.name}</CardTitle>
+                        <CardTitle><span style={{fontWeight:'bold'}}>Product: </span>{product.name}</CardTitle>
+                        <CardSubtitle><span style={{fontWeight:'bold'}}>Price: </span>{product.Price}</CardSubtitle>
                     </CardImgOverlay>
                     <Button outline onClick={()=>{addToCart(product)}}>
                 Add to cart
@@ -43,9 +50,20 @@ function Renderproducts({product}){
 
 
          return(
+             <div >
+                    <Dropdown >
+                        
+                        <DropdownToggle>Filter</DropdownToggle>
+                        <DropdownMenu>
+                        <DropdownItem>boyFriendFit</DropdownItem>
+                        <DropdownItem>slimFit</DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
+
             <div className="container">
             
             <div className="row">
+                
                     {display}
                     </div>
                     <div className="container">
@@ -90,6 +108,7 @@ function Renderproducts({product}){
               </div> 
               </div>
                     </div>
+            </div>
 
 
          );
